@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 1000px;
+    height: 450px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+}
+.container .content1{
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    color: white;
+    background-color: hsl(244, 38%, 16%);
+}
+.container .content1 .bottom{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 60px;
+    font-family: "Inter", sans-serif;
+}
+.container .content1 .bottom h1{
+    font-size: 35px;
+}
+.container .content1 .bottom h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.container .content1 .bottom2 p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    margin-top: 10px;
+}
+.container .content1 .bottom2{
+    margin-left: 50px;
+    width: 350px;
+    color: white;
+}
+.container .content1 .bottom3{
+    margin-left: 50px;
+    margin-top: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+.container .content1 .bottom3 p{
+    font-size: 13px;
+    margin-top: 3px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.content2{
+    background-image: url(image-header-desktop.jpg);
+    overflow: hidden;
+    background-size: cover;
+}
+.content2 .purple{
+    height: 450px;
+    background-color: rgba(75, 0, 128, 0.63);
+    z-index: 1000;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@media screen and (max-width:500px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: hsl(233, 47%, 7%);
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 400px;
+        height: 100%;
+        overflow: hidden;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .container .content1{
+        display: grid;
+        grid-template-rows: 40% 20% 40%;
+        align-items: center;
+        color: white;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .content2{
+        background-image: url(image-header-mobile.jpg);
+        overflow: hidden;
+        background-size: cover;
+    }
+    .container .content1 .bottom3{
+        margin-left: 50px;
+        margin-top: 40px;
+        font-family: "Lexend Deca", sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        gap: 25px;
+    }
+    .bottom{
+        align-items: center;
+    }
+    .container .content1 .bottom2{
+        margin-left: 50px;
+        width: 350px;
+        color: white;
+        }
+    }
+      
+    
+
